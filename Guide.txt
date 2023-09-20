@@ -1,0 +1,13 @@
+SQL comand for creating table:
+
+1. rake db:create_migration NAME=create_users
+
+2. open db migrate file then fill up details:
+
+create table :users do |t|
+t.string :username
+t.string :email
+t.string :password_digest
+t.timestamps
+
+3. rake db:migrate

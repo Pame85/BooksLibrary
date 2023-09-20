@@ -1,0 +1,6 @@
+<h1>Book Library</h1>
+<p>Title: <%= @book.title %></p>
+<p>Author: <%= @book.author %></p>
+<a href="/books/edit/<%= @book.id %>"> Edit</a>
+<a href="/books/delete/<%= @book.destroy %>"> Delete</a>
+<a href="/books">Home</a>

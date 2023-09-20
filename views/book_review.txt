@@ -1,0 +1,7 @@
+<% if @vook.reviews.any? %>
+<% @book.reviews.each do |review| %>
+<%= review.content %> by <%= review.name %>
+<% end %>
+<% else %>
+<p> Say no </p>
+<% end %>

@@ -1,0 +1,18 @@
+get '/resiger' do
+    erb :register
+end
+
+
+post '/register' do
+    @user =User.create(
+        username: params[:username],
+        password: params[:password]
+    )
+
+    if @user.save
+        redirect '/login'
+    else
+        erb :register
+        end
+    end
+

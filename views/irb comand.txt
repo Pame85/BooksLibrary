@@ -1,0 +1,4 @@
+irb -r ./app.rb
+
+Book.all
+Book.destroy_all
